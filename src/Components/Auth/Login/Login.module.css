@@ -1,0 +1,46 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginBackground {
+  height: 100vh;
+  width: 100%;
+}
+.loginCard {
+  padding: 20px 30px;
+  position: absolute;
+  top: 120px;
+  background-color: var(--clr-navbar);
+  border: none;
+  margin: 0 20px;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.loginForm label {
+  padding-top: 10px;
+  padding-bottom: 6px;
+  font-size: 18px;
+}
+.loginForm input {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.loginSubmit {
+  margin-top: 20px;
+  align-self: center;
+}
+
+.loginFooter {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link:hover {
+  text-decoration: underline !important;
+}

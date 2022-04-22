@@ -1,0 +1,98 @@
+.admin {
+  padding-top: 90px;
+}
+.adminLeft {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  height: 100%;
+  overflow-x: hidden;
+  box-shadow: 6px 0 5px -5px rgba(128, 128, 128, 0.8);
+  background-color: var(--clr-bcg);
+  z-index: 2;
+}
+.adminRight {
+  width: calc(100% - 280px);
+  height: 100%;
+  margin-left: 280px;
+  padding: 0 20px;
+  z-index: -1;
+}
+.overflow {
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.adminHeader {
+  padding: 20px 0;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.me {
+  width: 36px;
+  height: 36px;
+  background-size: cover;
+  border-radius: 50%;
+}
+.adminHeaderTop {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.adminName{
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: var(--clr-primary);
+}
+.adminMail {
+  padding-top: 4px;
+  font-size: 14px;
+  font-style: italic;
+}
+.adminItem {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 14px 0;
+  padding-left: 20px;
+  transition: var(--transition);
+}
+.adminItem:hover,
+.logout:hover {
+  color: var(--clr-primary);
+  transition: var(--transition);
+}
+.logout {
+  font-size: 16px;
+  color: var(--clr-font);
+}
+.adminItem.active {
+  color: var(--clr-primary);
+  font-size: 17px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 940px) {
+  .adminLeft {
+    left: -300px;
+    transition: var(--transition);
+  }
+  .adminLeft.active {
+    left: 0;
+    transition: var(--transition);
+  }
+  .adminRight {
+    width: 100%;
+    margin: 0;
+  }
+}

@@ -1,0 +1,41 @@
+.title {
+  font-size: 22px;
+  padding-top: 8px;
+}
+.adminBlogImg {
+  width: 100%;
+  height: 250px;
+  margin: 20px 0px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.adminBlogFormGroup {
+  display: flex;
+  align-items: center;
+}
+.adminBlogIcon {
+  cursor: pointer;
+  font-size: 26px;
+}
+.blogInput {
+  background-color: transparent;
+  color: var(--clr-font);
+  font-size: 22px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+}
+.blogDesc {
+  font-size: 16px;
+}
+.blogSubmit {
+  margin: 40px 0px;
+  float: right;
+}
+
+@media screen and (max-width: 940px) {
+  .title {
+    margin-left: 40px;
+  }
+}

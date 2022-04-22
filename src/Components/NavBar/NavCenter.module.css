@@ -1,0 +1,30 @@
+.nav-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.nav-item {
+  padding: 0 14px;
+  color: var(--clr-font);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.nav-item:hover {
+  color: var(--clr-font);
+}
+
+
+@media screen and (max-width: 610px) {
+  .nav-center {
+    position: absolute;
+    bottom: 16px;
+    right: 50%;
+    left: 50%;
+  }
+}

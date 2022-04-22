@@ -1,0 +1,27 @@
+.blogSubTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.leftSide {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.divider {
+  background-color: var(--clr-primary);
+  width: 3px;
+  height: 20px;
+}
+.category {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 6px;
+}
+.date {
+  font-size: 12px;
+  font-weight: 100;
+  color: rgb(128, 128, 128);
+}

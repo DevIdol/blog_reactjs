@@ -1,0 +1,43 @@
+.sideBar {
+  position: fixed;
+  top: 140px;
+  right: 0px;
+  width: calc(100% - 65%);
+  overflow-x: hidden;
+  bottom: 0;
+}
+.sideBar::-webkit-scrollbar{
+  width: 0px;
+}
+.sideBarTitle {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
+  padding: 4px 0px;
+  margin: 0 10px;
+}
+.sideBarList {
+  margin-bottom: 30px;
+}
+.sideBarListItem {
+  display: inline-block;
+  width: 33%;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.sideBarListItem:hover {
+  color: var(--clr-primary);
+  font-weight: 500;
+  transition: var(--transition);
+}
+.sideBarFooter {
+  text-align: center;
+  padding: 30px 0px;
+}
+@media screen and (max-width: 960px) {
+  .sideBar {
+    position: static;
+    width: 100%;
+  }
+}

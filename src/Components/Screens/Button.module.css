@@ -1,0 +1,22 @@
+.button {
+  font: inherit;
+  border: 1px solid var(--clr-primary);
+  background: transparent;
+  color: var(--clr-font);
+  padding: 0.7rem 1.8rem;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+
+.button:hover,
+.button:active {
+  background: var(--clr-primary);
+  color: var(--btn-font);
+  transition: var(--transition);
+}
+
+.button:focus {
+  outline: none;
+}

@@ -1,0 +1,53 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.registerBackground {
+  height: 100vh;
+  width: 100%;
+}
+.registerCard {
+  padding: 20px 30px;
+  position: absolute;
+  top: 110px;
+  background-color: var(--clr-navbar);
+  border: none;
+  margin: 0 20px;
+}
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.registerForm label {
+  padding-top: 10px;
+  padding-bottom: 6px;
+  font-size: 18px;
+}
+.registerForm input {
+  border-radius: 4px;
+  width: 100%;
+}
+
+.registerSubmit {
+  margin-top: 22px;
+  align-self: center;
+}
+.registerSubmit:disabled,
+.registerSubmit:focus:disabled,
+.registerSubmit:hover:disabled,
+.registerSubmit:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+.registerFooter {
+  margin-top: 10px;
+  float: right;
+}
+
+.link:hover {
+  text-decoration: underline !important;
+}

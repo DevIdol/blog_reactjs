@@ -1,0 +1,33 @@
+.btn {
+  text-align: center;
+}
+
+.btn .button {
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  padding: 0px 40px;
+  font-weight: 400;
+}
+.btn .button:hover {
+  background: none;
+  color: var(--clr-primary);
+  transition: var(--transition);
+}
+.btn .button.active {
+  border-bottom: 1px solid var(--clr-primary);
+  color: var(--clr-primary);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+ .btn .button {
+    padding: 4px 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+ .btn .button {
+    padding: 4px 18px;
+  }
+}

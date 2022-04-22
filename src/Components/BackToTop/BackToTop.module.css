@@ -1,0 +1,32 @@
+.to-top {
+  font-size: 22px;
+  color: var(--text-color);
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  border-color: var(--text-color);
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.to-top:before {
+  content: '▲';
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em var(--text-color);
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+}
+.to-top:hover {
+  color: var(--clr-primary);
+  border-color: var(--clr-primary);
+}
+.to-top:hover:before {
+  transform: rotate(360deg);
+}

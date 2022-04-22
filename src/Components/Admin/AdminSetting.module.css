@@ -1,0 +1,76 @@
+.settingTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+}
+.settingUpdateTitle {
+  font-size: 22px;
+}
+.settingDeleteTitle {
+  font-size: 12px;
+  color: #ff0000;
+  cursor: pointer;
+}
+.settingForm {
+  display: flex;
+  flex-direction: column;
+}
+.settingImg {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0;
+}
+.settingImg img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.settingPPIcon {
+  font-size: 26px;
+  color: var(--clr-primary);
+  cursor: pointer;
+}
+.settingForm label {
+  font-size: 20px;
+  margin-top: 20px;
+}
+.settingForm input {
+  color: var(--clr-font);
+  margin: 10px 0;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid var(--clr-primary);
+  background-color: transparent;
+}
+.settingSubmit {
+  margin: 40px 0;
+}
+.settingSubmit:disabled,
+.settingSubmit:focus:disabled,
+.settingSubmit:hover:disabled,
+.settingSubmit:active:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+@media screen and (max-width: 940px) {
+  .settingTitle {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .settingTitle {
+    align-items: baseline;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .settingDeleteTitle {
+    position: absolute;
+    right: 10px;
+    top: 130px;
+  }
+}

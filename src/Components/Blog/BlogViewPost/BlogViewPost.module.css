@@ -1,0 +1,147 @@
+.blogViewPost {
+  margin-right: 35%;
+  padding-bottom: 40px;
+}
+.blogViewPostImg {
+  text-align: center;
+}
+.blogViewPostImg img {
+  width: 74%;
+  height: 260px;
+  border-radius: 10px;
+}
+
+.blogSubTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14%;
+}
+
+.leftSide {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.divider {
+  background-color: var(--clr-primary);
+  width: 3px;
+  height: 20px;
+}
+.category {
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 6px;
+}
+.date {
+  font-size: 12px;
+  font-weight: 100;
+  color: rgb(128, 128, 128);
+}
+.rightSide {
+  font-size: 20px;
+  margin-top: -10px;
+}
+
+.blogViewTitle {
+  font-size: 20px;
+  padding-left: 13%;
+}
+.desc {
+  padding: 0 13%;
+  font-size: 14px;
+}
+/* ===== Blog Edit ===== */
+.blogEdit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 14%;
+}
+.blogTitleEdit {
+  margin: 10px 0;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: var(--clr-font);
+}
+.blogDescEdit {
+  background-color: transparent;
+  color: var(--clr-font);
+  margin: 10px 0;
+  border: none;
+}
+.blogSubTitleEdit{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.updateSubmit{
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .blogViewPost {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .blogViewPostImg img {
+    width: 78%;
+    height: 240px;
+  }
+  .blogSubTitle {
+    padding: 12px 12%;
+  }
+  .blogViewTitle {
+    font-size: 20px;
+    padding-left: 11%;
+  }
+  .desc {
+    padding: 0 11%;
+  }
+  /* ===== Blog Edit ===== */
+  .blogEdit {
+    padding: 20px 12%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .blogViewPostImg img {
+    width: 84%;
+    height: 230px;
+  }
+  .blogSubTitle {
+    padding: 12px 10%;
+  }
+  .blogViewTitle {
+    font-size: 20px;
+    padding-left: 8%;
+  }
+  .desc {
+    padding: 0 8%;
+  }
+  .blogEdit {
+    padding: 20px 10%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blogViewPostImg img {
+    width: 90%;
+    height: 200px;
+  }
+  .blogSubTitle {
+    padding: 12px 8%;
+  }
+  .blogViewTitle {
+    font-size: 20px;
+    padding-left: 5%;
+  }
+  .desc {
+    padding: 0 5%;
+  }
+  .blogEdit {
+    padding: 20px 8%;
+  }
+}

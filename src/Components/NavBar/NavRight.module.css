@@ -1,0 +1,57 @@
+.nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.github,
+.mail {
+  font-size: 26px;
+  margin: 0px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  color: var(--clr-primary);
+  box-shadow: 0 0 0 1px var(--clr-ani1), 0 0 0 3px var(--clr-ani2),
+    0 0 0 6px var(--clr-ani3);
+  animation: animate 2s infinite linear forwards, rays 2s 2s infinite linear;
+}
+.toggle-theme {
+  cursor: pointer;
+  color: var(--clr-primary);
+  font-size: 22px;
+  width: 28px;
+  height: auto;
+  text-align: center;
+  padding-bottom: 2px;
+  padding-right: 0.6px;
+  margin: 0px 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--clr-ani1), 0 0 0 3px var(--clr-ani2),
+    0 0 0 6px var(--clr-ani3);
+  animation: animate 2s infinite linear forwards, rays 2s 2s infinite linear;
+}
+@keyframes animate {
+  0% {
+    box-shadow: none;
+  }
+}
+@keyframes rays {
+  0% {
+    box-shadow: 0 0 0 0px var(--clr-ani1), 0 0 0 2px var(--clr-ani2),
+      0 0 0 4px var(--clr-ani3);
+  }
+  50% {
+    box-shadow: 0 0 0 2px var(--clr-ani1), 0 0 0 4px var(--clr-ani2),
+      0 0 0 10px var(--clr-ani3);
+  }
+  100% {
+    box-shadow: 0 0 0 0px var(--clr-ani1), 0 0 0 2px var(--clr-ani2),
+      0 0 0 4px var(--clr-ani3);
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .github, .mail, .toggle-theme{
+    margin-top: -36px;
+  }
+}

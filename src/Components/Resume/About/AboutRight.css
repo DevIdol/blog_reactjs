@@ -1,0 +1,39 @@
+.about-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-title {
+  font-weight: 200;
+  font-size: 24px;
+  text-decoration-line: underline !important;
+}
+
+.download {
+  margin-top: 40px;
+  text-align: center;
+}
+.download a {
+  font-size: 18px;
+  font-weight: 300;
+  padding: 8px 18px;
+  border: 1px solid var(--clr-primary);
+  border-radius: 4px;
+  color: var(--clr-font);
+}
+.download a:hover {
+  background-color: var(--clr-primary);
+  color: var(--btn-font);
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 991px) {
+  .download {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-right {
+    padding-top: 10px;
+  }
+}

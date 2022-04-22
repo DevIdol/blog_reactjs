@@ -1,0 +1,33 @@
+.btn {
+  text-align: center;
+}
+
+.btn .button {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px 6px 20px 6px;
+  border-radius: 10px;
+}
+.btn .button:hover {
+  background: none;
+  color: var(--clr-primary);
+  transition: var(--transition);
+}
+.btn .button.active {
+  background: var(--clr-primary);
+  color: var(--btn-font);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 600px) {
+  .btn .button {
+    padding: 4px 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .btn .button {
+    padding: 4px 18px;
+  }
+}
